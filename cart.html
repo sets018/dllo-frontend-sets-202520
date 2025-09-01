@@ -3,135 +3,149 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Home page of MyShop e-commerce website. Discover our featured products of our newest collection.">
-  <title>MyShop - Home</title>
-  <link rel="stylesheet" href="styles.css">
+  <meta name="description" content="Shopping cart of MyShop e-commerce website.">
+  <title>MyShop - Your Cart</title>
+  <link rel="stylesheet" href="style.css"> <!-- Corregido: styles.css -> style.css -->
 </head>
 
 <body>
-    <header>
-    <nav>
-      <a href="index.html" class="logo">MyShop</a>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="shop.html">Shop</a></li>
-        <li><a href="contact.html">Contact</a></li>
-        <li><a href="cart.html">Cart</a></li>
-      </ul>
+  <header class="header">
+    <nav class="navbar">
+      <div class="container flex-between">
+        <a href="index.html" class="logo">MyShop</a>
+        <ul class="nav-menu flex">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="shop.html">Shop</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="cart.html">Cart</a></li>
+        </ul>
+      </div>
     </nav>
   </header>
-    <main class="cart-container">
+
+  <main class="cart-container container">
     <h1>Your Cart</h1>
 
     <div class="cart-layout">
-      <section class="cart-items">
-        <div class="cart-item">
-          <img src="placeholder.png" alt="Product image" class="cart-item-image">
-          <div class="cart-item-details">
-            <p class="cart-item-title">T-Shirt</p>
-            <p class="cart-item-size">Size: Small</p>
-            <a href="#" class="remove-item">Remove Item</a>
-          </div>
-          <p class="cart-item-price">$20.00</p>
-          <input type="number" value="1" min="1" class="cart-quantity">
+      <!-- Cart Items Table -->
+      <section class="cart-items-table">
+        <!-- Table Headers -->
+        <div class="cart-header">
+          <div class="cart-header-item">Item</div>
+          <div class="cart-header-price">Price</div>
+          <div class="cart-header-quantity">Quantity</div>
         </div>
+        
         <hr>
-        <p class="cart-subtotal">Subtotal: $20.00</p>
+        
+        <!-- Cart Item -->
+        <div class="cart-item">
+          <div class="cart-item-details">
+            <div class="cart-item-image">
+              <div class="product-image"></div>
+            </div>
+            <div class="cart-item-info">
+              <p class="cart-item-title">T-Shirt</p>
+              <p class="cart-item-size">Size: Small</p>
+              <a href="#" class="remove-item">Remove Item</a>
+            </div>
+          </div>
+          <div class="cart-item-price">$20.00</div>
+          <div class="cart-item-quantity">
+            <input type="number" value="1" min="1" class="cart-quantity">
+          </div>
+        </div>
+        
+        <hr>
+        
+        <!-- Subtotal -->
+        <div class="cart-subtotal-row">
+          <span>Subtotal:</span>
+          <span class="cart-subtotal-amount">$20.00</span>
+        </div>
       </section>
 
+      <!-- Order Summary -->
       <aside class="order-summary">
         <h2>Summary (1 item)</h2>
         <div class="summary-line">
-          <span>Subtotal</span><span>$20.00</span>
+          <span>Subtotal</span>
+          <span>$20.00</span>
         </div>
         <div class="summary-line">
-          <span>Shipping</span><span>-</span>
+          <span>Shipping</span>
+          <span>-</span>
         </div>
-        <div class="summary-line">
-          <span>Est. Total</span><span>$20.00</span>
+        <hr>
+        <div class="summary-line total">
+          <span>Total</span>
+          <span>$20.00</span>
         </div>
-        <a href="checkout.html" class="btn-checkout">Checkout</a>
+        <button class="btn-checkout">Checkout</button>
       </aside>
     </div>
 
-    <section class="featured-products">
+    <!-- Recommended Products -->
+    <section class="recommended-products">
       <h2>Items You Might Like</h2>
-      <div class="carousel">
-        <article class="product-card">
-          <img src="images/product1.jpg" alt="Product 1">
-          <h4>Product 1</h4>
-          <p>$49.99</p>
-          <a href="product.html" class="btn-view">View</a>
-        </article>
-        <article class="product-card">
-          <img src="images/product2.jpg" alt="Product 2">
-          <h4>Product 2</h4>
-          <p>$59.99</p>
-          <a href="product.html" class="btn-view">View</a>
-        </article>
-         <article class="product-card">
-          <img src="images/product3.jpg" alt="Product 3">
-          <h4>Product 3</h4>
-          <p>$49.99</p>
-          <a href="product.html" class="btn-view">View</a>
-        </article>
-        <article class="product-card">
-          <img src="images/product4.jpg" alt="Product 4">
-          <h4>Product 4</h4>
-          <p>$59.99</p>
-          <a href="product.html" class="btn-view">View</a>
-        </article>
-         <article class="product-card">
-          <img src="images/product5.jpg" alt="Product 5">
-          <h4>Product 5</h4>
-          <p>$49.99</p>
-          <a href="product.html" class="btn-view">View</a>
-        </article>
+      <div class="product-carousel">
+        <button class="carousel-control prev">&#10094;</button>
+        <div class="product-slide">
+          <div class="product-image"></div>
+        </div>
+        <button class="carousel-control next">&#10095;</button>
+      </div>
+      <div class="carousel-dots">
+        <span class="dot active"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
       </div>
     </section>
   </main>
 
-   <footer>
-  <div class="footer-container">
-    <div class="footer-logo">
-      <h3>Company Logo</h3>
-    </div>
+  <footer>
+    <div class="footer-container">
+      <div class="footer-logo">
+        <h3>Company Logo</h3>
+      </div>
 
-    <div class="footer-column">
-      <h4>Company</h4>
-      <ul>
-        <li><a href="#">Work With Us</a></li>
-        <li><a href="#">Pricing</a></li>
-        <li><a href="#">Docs</a></li>
-      </ul>
-    </div>
+      <div class="footer-column">
+        <h4>COMPANY</h4>
+        <ul>
+          <li><a href="#">Work With Us</a></li>
+          <li><a href="#">Pricing</a></li>
+          <li><a href="#">Docs</a></li>
+        </ul>
+      </div>
 
-    <div class="footer-column">
-      <h4>Resources</h4>
-      <ul>
-        <li><a href="#">FAQ</a></li>
-        <li><a href="#">Returns</a></li>
-        <li><a href="#">See All Resources &gt;</a></li>
-      </ul>
-    </div>
+      <div class="footer-column">
+        <h4>RESOURCES</h4>
+        <ul>
+          <li><a href="#">FAQ</a></li>
+          <li><a href="#">Returns</a></li>
+          <li><a href="#">See All Resources &gt;</a></li>
+        </ul>
+      </div>
 
-    <div class="footer-column">
-      <h4>About</h4>
-      <ul>
-        <li><a href="#">Terms &amp; Conditions</a></li>
-        <li><a href="#">Privacy Policy</a></li>
-      </ul>
-      <div class="social-icons">
-        <a href="#"><img src="images/twitter-icon.png" alt="Twitter"></a>
-        <a href="#"><img src="images/facebook-icon.png" alt="Facebook"></a>
-        <a href="#"><img src="images/instagram-icon.png" alt="Instagram"></a>
+      <div class="footer-column">
+        <h4>ABOUT</h4>
+        <ul>
+          <li><a href="#">Terms &amp; Conditions</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+        </ul>
+        <div class="social-icons">
+          <a href="#">T</a>
+          <a href="#">IG</a>
+          <a href="#">F</a>
+        </div>
       </div>
     </div>
-  </div>
 
-  <div class="footer-bottom">
-    <p>&copy; 2025 My Store</p>
-  </div>
-</footer>
-
+    <div class="footer-bottom">
+      <p>Copyright © 2025 My.store</p>
+    </div>
+  </footer>
 </body>
+</html>

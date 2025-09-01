@@ -3,39 +3,45 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Home page of MyShop e-commerce website. Discover our featured products of our newest collection.">
-  <title>MyShop - Home</title>
-  <link rel="stylesheet" href="styles.css">
+  <meta name="description" content="Product detail page of MyShop e-commerce website.">
+  <title>MyShop - Product Detail</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <header>
-    <nav>
-      <a href="index.html" class="logo">MyShop</a>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="shop.html">Shop</a></li>
-        <li><a href="contact.html">Contact</a></li>
-        <li><a href="cart.html">Cart</a></li>
-      </ul>
+  <header class="header">
+    <nav class="navbar">
+      <div class="container flex-between">
+        <a href="index.html" class="logo">MyShop</a>
+        <ul class="nav-menu flex">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="shop.html">Shop</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="cart.html">Cart</a></li>
+        </ul>
+      </div>
     </nav>
   </header>
-  <main class="product-page">
-
+  
+  <main class="product-page container">
     <nav class="breadcrumbs">
-      <a href="#">Home</a> &gt;
-      <a href="#">Category</a> &gt;
+      <a href="index.html">Home</a> &gt;
+      <a href="shop.html">Category</a> &gt;
       <span>Product Title</span>
     </nav>
     
-    <section class="product-main">
+    <section class="product-main grid grid-2">
       <!-- Left: Product Images -->
       <div class="product-images">
-        <img src="placeholder-large.png" alt="Main Product Image" class="main-image">
-        <div class="thumbnails">
-          <img src="thumb1.png" alt="Thumbnail 1">
-          <img src="thumb2.png" alt="Thumbnail 2">
-          <img src="thumb3.png" alt="Thumbnail 3">
+        <div class="main-image-container">
+          <div class="product-image">
+            [Main Image]
+          </div>
+        </div>
+        <div class="thumbnails flex">
+          <div class="product-image thumbnail"></div>
+          <div class="product-image thumbnail"></div>
+          <div class="product-image thumbnail"></div>
         </div>
       </div>
 
@@ -47,73 +53,100 @@
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
         </p>
 
-        <label for="size">Size</label>
-        <select id="size" name="size">
-          <option>Small</option>
-          <option>Medium</option>
-          <option>Large</option>
-        </select>
+        <form class="product-form">
+          <div class="form-group">
+            <label for="size">Size</label>
+            <select id="size" name="size">
+              <option>Small</option>
+              <option>Medium</option>
+              <option>Large</option>
+            </select>
+          </div>
 
-        <label for="quantity">Quantity</label>
-        <input type="number" id="quantity" name="quantity" min="1" value="1">
+          <div class="form-group">
+            <label for="quantity">Quantity</label>
+            <input type="number" id="quantity" name="quantity" min="1" value="1">
+          </div>
 
-        <button class="add-to-cart-btn">Add to Cart</button>
+          <button class="btn add-to-cart-btn">Add to Cart</button>
+        </form>
       </div>
     </section>
 
     <!-- Related Products -->
     <section class="related-products">
       <h2>Related Products</h2>
-      <div class="related-grid">
-        <div class="related-item"><img src="related1.png" alt="Related product"></div>
-        <div class="related-item"><img src="related2.png" alt="Related product"></div>
-        <div class="related-item"><img src="related3.png" alt="Related product"></div>
-        <div class="related-item"><img src="related4.png" alt="Related product"></div>
+      <div class="product-grid">
+        <article class="product-card">
+          <div class="product-image"></div>
+          <h4>Related Product</h4>
+          <p>$19.99</p>
+        </article>
+        <article class="product-card">
+          <div class="product-image"></div>
+          <h4>Related Product</h4>
+          <p>$19.99</p>
+        </article>
+        <article class="product-card">
+          <div class="product-image"></div>
+          <h4>Related Product</h4>
+          <p>$19.99</p>
+        </article>
+        <article class="product-card">
+          <div class="product-image"></div>
+          <h4>Related Product</h4>
+          <p>$19.99</p>
+        </article>
+        <article class="product-card">
+          <div class="product-image"></div>
+          <h4>Related Product</h4>
+          <p>$19.99</p>
+        </article>
       </div>
     </section>
   </main>
 
-   <footer>
-  <div class="footer-container">
-    <div class="footer-logo">
-      <h3>Company Logo</h3>
-    </div>
+  <footer>
+    <div class="footer-container">
+      <div class="footer-logo">
+        <h3>Company Logo</h3>
+      </div>
 
-    <div class="footer-column">
-      <h4>Company</h4>
-      <ul>
-        <li><a href="#">Work With Us</a></li>
-        <li><a href="#">Pricing</a></li>
-        <li><a href="#">Docs</a></li>
-      </ul>
-    </div>
+      <div class="footer-column">
+        <h4>COMPANY</h4>
+        <ul>
+          <li><a href="#">Work With Us</a></li>
+          <li><a href="#">Pricing</a></li>
+          <li><a href="#">Docs</a></li>
+        </ul>
+      </div>
 
-    <div class="footer-column">
-      <h4>Resources</h4>
-      <ul>
-        <li><a href="#">FAQ</a></li>
-        <li><a href="#">Returns</a></li>
-        <li><a href="#">See All Resources &gt;</a></li>
-      </ul>
-    </div>
+      <div class="footer-column">
+        <h4>RESOURCES</h4>
+        <ul>
+          <li><a href="#">FAQ</a></li>
+          <li><a href="#">Returns</a></li>
+          <li><a href="#">See All Resources &gt;</a></li>
+        </ul>
+      </div>
 
-    <div class="footer-column">
-      <h4>About</h4>
-      <ul>
-        <li><a href="#">Terms &amp; Conditions</a></li>
-        <li><a href="#">Privacy Policy</a></li>
-      </ul>
-      <div class="social-icons">
-        <a href="#"><img src="images/twitter-icon.png" alt="Twitter"></a>
-        <a href="#"><img src="images/facebook-icon.png" alt="Facebook"></a>
-        <a href="#"><img src="images/instagram-icon.png" alt="Instagram"></a>
+      <div class="footer-column">
+        <h4>ABOUT</h4>
+        <ul>
+          <li><a href="#">Terms &amp; Conditions</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+        </ul>
+        <div class="social-icons">
+          <a href="#">T</a>
+          <a href="#">IG</a>
+          <a href="#">F</a>
+        </div>
       </div>
     </div>
-  </div>
 
-  <div class="footer-bottom">
-    <p>&copy; 2025 My Store</p>
-  </div>
-</footer>
-
+    <div class="footer-bottom">
+      <p>Copyright © 2025 My.store</p>
+    </div>
+  </footer>
 </body>
+</html>
