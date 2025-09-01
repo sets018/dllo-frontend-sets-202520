@@ -3,153 +3,152 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Home page of MyShop e-commerce website. Discover our featured products of our newest collection.">
-  <title>MyShop - Home</title>
-  <link rel="stylesheet" href="styles.css">
+  <meta name="description" content="Shop page of MyShop e-commerce website.">
+  <title>MyShop - Shop</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <header>
-    <nav>
-      <a href="index.html" class="logo">MyShop</a>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="shop.html">Shop</a></li>
-        <li><a href="contact.html">Contact</a></li>
-        <li><a href="cart.html">Cart</a></li>
-      </ul>
+  <header class="header">
+    <nav class="navbar">
+      <div class="container flex-between">
+        <a href="index.html" class="logo">MyShop</a>
+        <ul class="nav-menu flex">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="shop.html">Shop</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="cart.html">Cart</a></li>
+        </ul>
+      </div>
     </nav>
   </header>
-    <main>
-    
+  
   <main class="shop-container">
-  <!-- Sidebar -->
-  <aside class="shop-sidebar">
-    <!-- Active Filters -->
-    <div class="active-filters">
-      <button class="filter-tag">Mens ✕</button>
-    </div>
+    <!-- Sidebar -->
+    <aside class="shop-sidebar">
+      <!-- Active Filters -->
+      <div class="active-filters">
+        <button class="filter-tag">Mens ✕</button>
+      </div>
 
-    <!-- Categories -->
-    <h4>Category</h4>
-    <ul class="category-list">
-      <li><label><input type="checkbox" checked> Mens</label></li>
-      <li><label><input type="checkbox"> Womens</label></li>
-      <li><label><input type="checkbox"> Kids</label></li>
-      <li><label><input type="checkbox"> Pets</label></li>
-      <li><label><input type="checkbox"> Home</label></li>
-    </ul>
-  </aside>
+      <!-- Categories -->
+      <h4>Category</h4>
+      <ul class="category-list">
+        <li><label><input type="checkbox" checked> Mens</label></li>
+        <li><label><input type="checkbox"> Womens</label></li>
+        <li><label><input type="checkbox"> Kids</label></li>
+        <li><label><input type="checkbox"> Pets</label></li>
+        <li><label><input type="checkbox"> Home</label></li>
+      </ul>
+    </aside>
 
-  <!-- Product Grid -->
-  <section class="shop-products">
-    <!-- Sort Dropdown -->
-    <div class="shop-controls">
-      <select>
-        <option>Featured</option>
-        <option>Price: Low to High</option>
-        <option>Price: High to Low</option>
-        <option>Newest</option>
-      </select>
-    </div>
+    <!-- Product Grid -->
+    <section class="shop-products">
+      <!-- Sort Dropdown -->
+      <div class="shop-controls">
+        <select>
+          <option>Featured</option>
+          <option>Price: Low to High</option>
+          <option>Price: High to Low</option>
+          <option>Newest</option>
+        </select>
+      </div>
 
-    <!-- Product Cards -->
-    <div class="product-grid">
-      <article class="product-card">
-        <div class="product-image">[Image]</div>
-        <h3 class="product-title">Product Title</h3>
-        <p class="product-price">$20.00</p>
-        <p class="product-options">2 color options</p>
-        <a href="product.html" class="btn-view">View</a>
-      </article>
-
-      <article class="product-card">
-        <div class="product-image">[Image]</div>
-        <h3 class="product-title">Product Title</h3>
-        <p class="product-price">$32.00</p>
-        <p class="product-options">2 color options</p>
-        <a href="product.html" class="btn-view">View</a>
-      </article>
-
-      <article class="product-card">
-        <div class="product-image">[Image]</div>
-        <h3 class="product-title">Product Title</h3>
-        <p class="product-price">$75.00</p>
-        <p class="product-options">2 color options</p>
-        <a href="product.html" class="btn-view">View</a>
-      </article>
+      <!-- Product Cards -->
+      <div class="product-grid">
+        <article class="product-card">
+          <div class="product-image">[Image]</div>
+          <h3 class="product-title">Product Title</h3>
+          <p class="product-price">$20.00</p>
+          <p class="product-options">2 color options</p>
+          <a href="product.html" class="btn-view">View</a>
+        </article>
 
         <article class="product-card">
-        <div class="product-image">[Image]</div>
-        <h3 class="product-title">Product Title</h3>
-        <p class="product-price">$56.00</p>
-        <p class="product-options">2 color options</p>
-        <a href="product.html" class="btn-view">View</a>
-      </article>
+          <div class="product-image">[Image]</div>
+          <h3 class="product-title">Product Title</h3>
+          <p class="product-price">$32.00</p>
+          <p class="product-options">2 color options</p>
+          <a href="product.html" class="btn-view">View</a>
+        </article>
 
-      <article class="product-card">
-        <div class="product-image">[Image]</div>
-        <h3 class="product-title">Product Title</h3>
-        <p class="product-price">$152.00</p>
-        <p class="product-options">2 color options</p>
-        <a href="product.html" class="btn-view">View</a>
-      </article>
+        <article class="product-card">
+          <div class="product-image">[Image]</div>
+          <h3 class="product-title">Product Title</h3>
+          <p class="product-price">$75.00</p>
+          <p class="product-options">2 color options</p>
+          <a href="product.html" class="btn-view">View</a>
+        </article>
 
-      <article class="product-card">
-        <div class="product-image">[Image]</div>
-        <h3 class="product-title">Product Title</h3>
-        <p class="product-price">$125.00</p>
-        <p class="product-options">2 color options</p>
-        <a href="product.html" class="btn-view">View</a>
-      </article>
+        <article class="product-card">
+          <div class="product-image">[Image]</div>
+          <h3 class="product-title">Product Title</h3>
+          <p class="product-price">$56.00</p>
+          <p class="product-options">2 color options</p>
+          <a href="product.html" class="btn-view">View</a>
+        </article>
 
-    </div>
-  </section>
-</main>
+        <article class="product-card">
+          <div class="product-image">[Image]</div>
+          <h3 class="product-title">Product Title</h3>
+          <p class="product-price">$152.00</p>
+          <p class="product-options">2 color options</p>
+          <a href="product.html" class="btn-view">View</a>
+        </article>
 
+        <article class="product-card">
+          <div class="product-image">[Image]</div>
+          <h3 class="product-title">Product Title</h3>
+          <p class="product-price">$125.00</p>
+          <p class="product-options">2 color options</p>
+          <a href="product.html" class="btn-view">View</a>
+        </article>
+
+      </div>
+    </section>
   </main>
 
-   <footer>
-  <div class="footer-container">
-    <div class="footer-logo">
-      <h3>Company Logo</h3>
-    </div>
+  <footer>
+    <div class="footer-container">
+      <div class="footer-logo">
+        <h3>Company Logo</h3>
+      </div>
 
-    <div class="footer-column">
-      <h4>Company</h4>
-      <ul>
-        <li><a href="#">Work With Us</a></li>
-        <li><a href="#">Pricing</a></li>
-        <li><a href="#">Docs</a></li>
-      </ul>
-    </div>
+      <div class="footer-column">
+        <h4>COMPANY</h4>
+        <ul>
+          <li><a href="#">Work With Us</a></li>
+          <li><a href="#">Pricing</a></li>
+          <li><a href="#">Docs</a></li>
+        </ul>
+      </div>
 
-    <div class="footer-column">
-      <h4>Resources</h4>
-      <ul>
-        <li><a href="#">FAQ</a></li>
-        <li><a href="#">Returns</a></li>
-        <li><a href="#">See All Resources &gt;</a></li>
-      </ul>
-    </div>
+      <div class="footer-column">
+        <h4>RESOURCES</h4>
+        <ul>
+          <li><a href="#">FAQ</a></li>
+          <li><a href="#">Returns</a></li>
+          <li><a href="#">See All Resources &gt;</a></li>
+        </ul>
+      </div>
 
-    <div class="footer-column">
-      <h4>About</h4>
-      <ul>
-        <li><a href="#">Terms &amp; Conditions</a></li>
-        <li><a href="#">Privacy Policy</a></li>
-      </ul>
-      <div class="social-icons">
-        <a href="#"><img src="images/twitter-icon.png" alt="Twitter"></a>
-        <a href="#"><img src="images/facebook-icon.png" alt="Facebook"></a>
-        <a href="#"><img src="images/instagram-icon.png" alt="Instagram"></a>
+      <div class="footer-column">
+        <h4>ABOUT</h4>
+        <ul>
+          <li><a href="#">Terms &amp; Conditions</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+        </ul>
+        <div class="social-icons">
+          <a href="#">T</a>
+          <a href="#">IG</a>
+          <a href="#">F</a>
+        </div>
       </div>
     </div>
-  </div>
 
-  <div class="footer-bottom">
-    <p>&copy; 2025 My Store</p>
-  </div>
-</footer>
-
+    <div class="footer-bottom">
+      <p>Copyright © 2025 My.store</p>
+    </div>
+  </footer>
 </body>
+</html>

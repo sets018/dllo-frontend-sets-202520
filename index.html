@@ -5,88 +5,89 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Home page of MyShop e-commerce website. Discover our featured products of our newest collection.">
   <title>MyShop - Home</title>
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <header>
-    <nav>
-      <a href="index.html" class="logo">MyShop</a>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="shop.html">Shop</a></li>
-        <li><a href="contact.html">Contact</a></li>
-        <li><a href="cart.html">Cart</a></li>
-      </ul>
+    <header class = "header">
+    <nav class = "navbar">
+      <div class="container flex-between">
+        <a href="index.html" class="logo">MyShop</a>
+        <ul class="nav-menu flex">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="shop.html">Shop</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="cart.html">Cart</a></li>
+        </ul>
+      </div>
     </nav>
   </header>
     <main>
     <section class="hero">
-      <h2>Discover our latest collection!</h2>
+      <h2 class="hero-text">Discover our latest collection!</h2>
       <p>Trendy styles at the best prices</p>
-      <a href="shop.html" class="btn-cta">Shop Now</a>
+      <a href="shop.html" class="btn">Shop Now</a>
     </section>
 
     <section class="featured-products">
       <h2>Featured Products</h2>
       <div class="carousel">
         <article class="product-card">
-          <img src="images/product1.jpg" alt="Product 1">
+          <img src="https://picsum.photos/300/300?random=1" alt="Product 1">
           <h4>Product 1</h4>
           <p>$49.99</p>
           <a href="product.html" class="btn-view">View</a>
         </article>
         <article class="product-card">
-          <img src="images/product2.jpg" alt="Product 2">
+          <img src="https://picsum.photos/300/300?random=2" alt="Product 2">
           <h4>Product 2</h4>
           <p>$59.99</p>
           <a href="product.html" class="btn-view">View</a>
         </article>
          <article class="product-card">
-          <img src="images/product3.jpg" alt="Product 3">
+          <img src="https://picsum.photos/300/300?random=3" alt="Product 3">
           <h4>Product 3</h4>
           <p>$49.99</p>
           <a href="product.html" class="btn-view">View</a>
         </article>
         <article class="product-card">
-          <img src="images/product4.jpg" alt="Product 4">
+          <img src="https://picsum.photos/300/300?random=4" alt="Product 4">
           <h4>Product 4</h4>
           <p>$59.99</p>
-          <a href="product.html" class="btn-view">View</a>
-        </article>
-         <article class="product-card">
-          <img src="images/product5.jpg" alt="Product 5">
-          <h4>Product 5</h4>
-          <p>$49.99</p>
           <a href="product.html" class="btn-view">View</a>
         </article>
       </div>
     </section>
 
     <section class="about-us">
-    <h2>About Us</h2>
-    <div class="about-us-content">
-      <img src="images/about-us.jpg" alt="image_describing_MyShop">
-      <p>
-        At MyShop, we believe shopping should be easy, enjoyable, 
-        and inspiring. Our mission is to bring you a carefully curated 
-        selection of products that combine quality with affordability.
-      </p>
-    </div>
-  </section>
+  <h2>About Us</h2>
+  <div class="about-us-content">
+    <img src="https://picsum.photos/600/400?random=10" alt="image_describing_MyShop">
+    <p>
+      At MyShop, we believe shopping should be easy, enjoyable, and inspiring. Our mission is to bring you a carefully curated selection of products that combine quality with affordability.
+      <br><br>
+      At MyShop, we believe shopping should be easy, enjoyable, and inspiring. Our mission is to bring you a carefully curated selection of products that combine quality with affordability.
+      <br><br>
+      At MyShop, we believe shopping should be easy, enjoyable, and inspiring. Our mission is to bring you a carefully curated selection of products that combine quality with affordability.
+    </p>
+  </div>
+</section>
 
   <section class="find-store">
-    <h2>Find a Store</h2>
-    <form class="store-search" action="#" method="get">
-      <label for="location-search">tell us where you're at?</label>
-      <input type="text" id="location-search" name="location" placeholder="Enter your city or zip code">
-      <button type="submit">Search</button>
-    </form>
-    <section class="map">
-      <h2>Our Location</h2>
+  <h2>Find a Store</h2>
+  <div class="container">
+    <div class="store-search">
+      <form action="#" method="get">
+        <label for="location-search">Your Location</label>
+        <input type="text" id="location-search" name="location" placeholder="Enter your city or zip code">
+        <button type="submit" class="btn">Search</button>
+      </form>
+    </div>
+    <div class="map">
       <iframe src="https://maps.google.com/maps?q=New%20York&t=&z=13&ie=UTF8&iwloc=&output=embed"></iframe>
-    </section>
-  </section>
+    </div>
+  </div>
+</section>
 
   </main>
 
@@ -120,11 +121,6 @@
         <li><a href="#">Terms &amp; Conditions</a></li>
         <li><a href="#">Privacy Policy</a></li>
       </ul>
-      <div class="social-icons">
-        <a href="#"><img src="images/twitter-icon.png" alt="Twitter"></a>
-        <a href="#"><img src="images/facebook-icon.png" alt="Facebook"></a>
-        <a href="#"><img src="images/instagram-icon.png" alt="Instagram"></a>
-      </div>
     </div>
   </div>
 
@@ -134,3 +130,4 @@
 </footer>
 
 </body>
+</html>
