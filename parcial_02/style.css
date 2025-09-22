@@ -1,0 +1,138 @@
+body {
+  font-family: Roboto, sans-serif;
+  background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  margin: 0;
+  min-height: 100vh;
+}
+
+.container {
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+h1 {
+  margin: 0;
+  font-size: 2rem;
+  font-weight: 600;
+}
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+}
+
+
+.login-section, .todo-section {
+  width: 100%;
+  max-width: 700px;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.2);
+  padding: 2.5rem 2rem;
+  margin: 2rem auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+
+.login-section, .todo-section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 100%;
+}
+input[type="text"], input[type="password"] {
+  padding: 0.7rem 1rem;
+  border: 1px solid #e0e0e0;
+  border-radius: 6px;
+  font-size: 1rem;
+  background: #f6f7fb;
+  transition: border 0.2s;
+}
+input[type="text"]:focus, input[type="password"]:focus {
+  border: 1.5px solid #a8edea;
+  outline: none;
+}
+
+
+#todoList {
+  margin-top: 1rem;
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+}
+
+#todoList li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #ebecf0;
+  padding: 0.4rem 0.8rem;
+  border-radius: 6px;
+  transition: background 0.3s;
+}
+
+#todoList li .done {
+  /* Optional: style for text when done */
+  text-decoration: line-through;
+  color: #388e3c;
+}
+
+#todoList li.done {
+  background: linear-gradient(90deg, #b2f7c1 0%, #e0ffe7 100%);
+}
+
+
+button {
+  background: #1976d2;
+  color: white;
+  border: none;
+  padding: 0.7rem 1.5rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 500;
+  box-shadow: 0 2px 8px #0002;
+  transition: background 0.2s;
+}
+
+.edit, .delete {
+  background: #1976d2;
+  color: white;
+  border: none;
+  padding: 0.3rem 0.7rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1.1rem;
+  margin-left: 0.3rem;
+  box-shadow: 0 1px 4px #0001;
+  transition: background 0.2s;
+}
+.edit:hover, .delete:hover {
+  background: #1565c0;
+}
+
+
+button:hover {
+  background: #1565c0;
+}
+
+#errorMsg {
+  color: #d32f2f;
+  font-size: 0.95rem;
+  margin-top: 0.5rem;
+  text-align: center;
+}
