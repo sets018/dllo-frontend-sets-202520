@@ -80,8 +80,8 @@ function renderTodos() {
     // Mostrar fechas (creado/editado)
     const fecha = document.createElement("small");
     fecha.textContent =
-      "Creado: " + new Date(todo.createdAt).toLocaleString() +
-      " | Editado: " + new Date(todo.updatedAt).toLocaleString();
+      "Created: " + new Date(todo.createdAt).toLocaleString() +
+      " | Edited: " + new Date(todo.updatedAt).toLocaleString();
 
     // Acciones (solo locales: editar y eliminar)
     const actions = document.createElement("div");
